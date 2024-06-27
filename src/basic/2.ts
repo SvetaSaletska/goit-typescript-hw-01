@@ -1,1 +1,1 @@
-let person: (string | number)[] = ["Max", 21];
+export const person: (string | number)[] = ["Max", 21];
