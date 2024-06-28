@@ -1,4 +1,15 @@
-export const page1 = {
+interface page {
+  title: string;
+  likes: number;
+  accounts: string[];
+  status: "open" | "close";
+  details?: {
+    createAt?: Date;
+    updateAt?: Date;
+  };
+}
+
+export const page1: page = {
   title: "The awesome page",
   likes: 100,
   accounts: ["Max", "Anton", "Nikita"],
@@ -9,7 +20,7 @@ export const page1 = {
   },
 };
 
-export const page2 = {
+export const page2: page = {
   title: "Python or Js",
   likes: 5,
   accounts: ["Alex"],
