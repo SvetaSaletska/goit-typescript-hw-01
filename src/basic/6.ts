@@ -1,10 +1,11 @@
-type UserAddress = {
-  city: string;
-  country: string;
-};
-
 interface User {
-  [key: string]: string | number | UserAddress;
+  name: string;
+  age: number;
+  email: string;
+  address?: {
+    city?: string;
+    country?: string;
+  };
 }
 
 export const mango: User = {
